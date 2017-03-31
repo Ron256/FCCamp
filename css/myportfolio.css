@@ -1,0 +1,75 @@
+body {
+	/*background-image: url(https://previews.123rf.com/images/mangpor2004/mangpor20041508/mangpor2004150800081/43448161-Blur-inside-office-building-with-people-and-bokeh-light-background-interior-and-business-background-Stock-Photo.jpg); */
+	background-color: #808080;
+	/*position: fixed;*/
+}
+
+.container {
+	/*margin-left:10px;
+	margin-right:10px;
+	width: 100%
+	background-color:blue !important;
+	*/
+	
+}
+
+#ABOUT {
+	background-color:#D3D3D3;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:-25px;
+	padding: 0px  10px 200px 10px;
+	border: 5px;
+	border-color; silver;
+}
+.mynavbar {
+	text-align:center;
+}
+.mynavbar {
+	float: right;
+}
+.mynavbar .nav li {
+	display:inline-block;
+	float:none;
+	margin:0 20px;
+	vertical-align:middle;
+}
+.mynavbar .nav li a{
+	border-radius:10px;
+	background:orange;
+	color:#fff;
+}
+.nav li:hover {
+	background:white;
+	/*background:transparent;*/
+	border-radius:0;
+	max-width:150px;
+	margin:0 20px;
+}
+
+.mynavbar .nav li.mylogo a img {
+	width:100%;
+	height:auto;
+	vertical-align:middle;
+	display:inline-block;
+}
+.navbar-brand {
+	display:none
+}
+ @media screen and (max-width:768px) {
+.navbar-brand {
+	display:inline
+}
+.mynavbar .nav li {
+	display:block;
+	margin:0
+}
+.mynavbar .nav li a {
+	border-radius:0;
+	display:block;
+	border-bottom:1px solid #fff
+}
+.mynavbar li.mylogo {
+	display:none
+}
+}
