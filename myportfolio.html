@@ -1,8 +1,9 @@
 <!DOCTYPE html5>
-<html>
+<html lang="en">
   <head>
    <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		
@@ -11,7 +12,10 @@
 	<link href="C:\repos\FCCamp\css\myportfolio.css" rel="stylesheet" type="text/css">
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
-   <nav class="navbar navbar-default" role="navigation" style="background-color: #9400D3;">
+  <!-- This container was placed so that the fixed .navbar content is placed inside the .container-fluid for -->
+  <!-- proper padding and alignment with the rest of the content  -->
+  <div class="container-fluid">
+   <nav class="navbar navbar-default navbar-fixed-top"  style="background-color: #9400D3;">
       <div class="container-fluid">
 	  <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -27,28 +31,130 @@
 	   
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav mynavbar">
-			  <li><a href="#ABOUT">ABOUT</a></li>
+			  <li class="active"><a href="#ABOUT">ABOUT</a></li>
 			  <li><a href="#PORTFOLIO">PORTFOLIO</a></li>
-			  <li><a href="#">CONTACT</a></li>
+			  <li><a href="#CONTACT">CONTACT</a></li>
 			
 			  
 			</ul>
 	   </div>
-	   
-		  
-	  </div> <!-- container-fluid-->
-	</nav>
-	<div class="container">
+	  
+	  </div> <!-- container-fluid role="navigation"-->
+	</nav> <!--nav -->
+	</div> <!--container-fluid -->
+	
+	<div class="container-fluid">
+	<!--<div class="container"> -->
 		<div id="ABOUT">
-		   <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
-
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+		<div class="page-header"><br><h1 class="text-center text-primary">About Me!</h1></div>
+		<div class="row">
+			<div class="col-sm-9 col-md-6">
+			   <p class="text-center text-par"><br><br>My name is Ronaldlee Ejalu, a fullstack Software Engineer with practical experience <br> in Data Warehousing and Business Intelligence.</p>
+			 </div> <!-- row-->
+			 <div class="col-xs-3 col-md-6">
+			    <img class="img-responsive img-circle" src="https://drive.google.com/uc?export=download&id=0Bx7DMPxCDVQmVHVQSlJjdkVlOHM" width="400px" height="200px">
+			</div> <!--xs-4-->
+		 </div><!--ABOUT-->
+		 <!-- </div> -->
+		 <!--Container-->
 		 </div>
+		
+		<!-- <div class="container"> -->
+		<div class="container-fluid">
 		 <div id="PORTFOLIO">
-		   <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+		     <div class="page-header">
+			   <h1 class="text-center text-primary" style="letter-spacing: 4px;">PORTFOLIO</h1>
+			 </div>
+			   <div class="row">
+			     <div class="col-sm-9 col-md-6">
+				   <a href="https://drive.google.com/file/d/0Bx7DMPxCDVQmY0s1T0FpbUlNc3UxNElTZGxiSFg2UXlmSnE4/view?usp=sharing" target="_blank"><img class="img-responsive img-rounded"  src="https://drive.google.com/uc?export=download&id=0Bx7DMPxCDVQmMlFyR3BBWnV0aWs" alt="MSC Project dissertation" width="350px" height="200px"></a>
+			     </div>
+			   <div class="col-xs-3 col-md-6">
+			  <!--https://codepen.io/Ron256/pen/mWzMVK -->
+			      <a href="https://codepen.io/Ron256/pen/mWzMVK" target="_blank"><img class="img-responsive img-rounded"  src="https://drive.google.com/uc?export=download&id=0Bx7DMPxCDVQmVHB3MDhWOTRjNWs" alt="SteveJobs Tribute photograph" width="350px" height="200px"></a>
+			    </div>
+			</div><!--row -->
+		</div> <!--PORTFOLIO -->
+		</div>
+		<div class="container-fluid">
+		<div id="CONTACT">
+		<div class="page-header"><h1 class="text-center text-primary">CONTACT US</h1></div>
+		  <div class="row">
+		    <div class="col-sm-9 col-md-6">
+			  <form class="form-horizontal">
+			    <div class="form-group">
+					<label for="inputname" class="control-label col-xs-1">Name: </label>
+					<div class="col-sm-offset-1 col-xs-4">
+					  <input type="text" class="form-control" id="inputname">
+					</div>
+			    </div> <!--form-group -->
+			
+			<div class="form-group">
+			   <!-- test -->
+			  <label for="inputemail" class="control-label col-xs-1">Email: </label>
+			  <div class="col-sm-offset-1 col-xs-4">
+			    <input type="email" class="form-control" id="inputemail">
+			  </div>
+			</div> <!-- form-group-->
+			
+			<div class="form-group">
+			   <!-- test -->
+			  <label for="inputphone" class="control-label col-xs-1">Phone:</label>
+			  <div class="col-sm-offset-1 col-xs-5">
+			    <input type="number" class="form-control" id="inputphone" placeholder="Phone number">
+			  </div>
+			</div> <!-- div -->
+			  
+			<div class="form-group">
+			   <!-- test -->
+			  <label for="inputmessage" class="control-label  col-sm-2">Message:</label>
+			  <div class="col-sm-7">
+			    <textarea  class="form-control" id="inputmessage" placeholder="" rows="5"></textarea>
+			  </div>
+			</div> <!-- form-group-->
+			<div class="col-sm-offset-2 col-sm-4">
+			<button type="submit" class="btn btn-default">Send</button>
+			</div>
+			
+			
+			  </form>
+			</div><!-- col-sm-9 col-md-6 -->
+			<div class="col-sm-3 col-md-6">
+			  <p>Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my resume
+			  , tips on how to solve your random questions about the universe and the meaning of 
+			  life, or even if only for some nice Fika here in stunning Detroit... 
+			  just feel free to drop me a line anytime.</p><br><br><br>
+			  
+			  <p>I promise to reply A.S.A.P.</p>
+			</div>
+		  
+		  </div> <!-- row -->
+		  
+		</div> <!-- #CONTACT -->
+		</div>
+		
+	   
+	
+	
+	<div class="container-fluid footer-cla text-center" style="background-color: silver;">
+	<footer>
+	  <p>Ronaldlee Ejalu &#169 2017. ALL RIGHTS RESERVED</p>
+		
+		  <div class="row">
+			<div class="col-xs-3 col-sm-3">
+			  <a href="https://www.facebook.com/ronald.lee.355" target="_blank" type="button" class="btn-floating btn-large btn-fb"><i class="fa fa-facebook-square"></i></a>
+			</div>
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
-		 </div>
-	</div>
+			<div class="col-xs-3 col-sm-3">
+			  <a href="https://www.linkedin.com/in/ronaldlee-ejalu-b0224823/" target="_blank" type="button" class="btn-floating btn-large btn-fb"><i class="fa fa-linkedin-square"></i></a>
+			</div>
+
+			<div class="col-xs-3 col-sm-3">
+			  <a href="https://github.com/Ron256/FCCamp" target="_blank" type="button" class="btn-floating btn-large btn-fb"><i class="fa fa-github-square"></i></a>
+			</div> 
+			
+		  </div><!--row -->
+		</footer>
+	</div><!--container-->
   </body>
 </html>
